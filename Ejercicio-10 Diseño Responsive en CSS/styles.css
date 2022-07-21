@@ -1,0 +1,36 @@
+.contenedor {
+    display: flex;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: .5rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+@media screen and (max-width:640px) {
+
+    .contenedor {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+}
